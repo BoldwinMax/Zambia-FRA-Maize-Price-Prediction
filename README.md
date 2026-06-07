@@ -13,7 +13,7 @@ from 2002–2025.
 
 ## 🔗 Live dashboard
 
-**[➡️ Try the interactive dashboard](https://YOUR-APP-NAME.streamlit.app)**
+**[➡️ Try the interactive dashboard](https://zambia-fra-maize-price.streamlit.app)**
 
 Move the sliders for the 2026 exchange rate, harvest, and inflation, and watch
 the predicted price update live.
