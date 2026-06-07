@@ -1,19 +1,19 @@
-# 🌽 Zambia FRA Maize Floor Price — Predicting the 2026 Announcement
+# 🌽 Zambia FRA Maize Floor Price - Predicting the 2026 Announcement
 
 Predicting the **Food Reserve Agency (FRA)** maize floor price (Kwacha per 50 kg
 bag) ahead of its annual announcement, using Zambian and global economic data
 from 2002–2025.
 
 **Headline result:** the model points to a 2026 floor price in the **mid-K350s**
-(indicative range ~K341–K371) — a modest, single-digit-percentage rise on the
+(indicative range ~K341–K371) - a modest, single-digit-percentage rise on the
 2025 price of K340.
 
-> ⚠️ A small-sample, indicative model — see the caveats below. The FRA price is
+> ⚠️ A small-sample, indicative model - see the caveats below. The FRA price is
 > ultimately a policy decision.
 
 ## 🔗 Live dashboard
 
-**[➡️ Try the interactive dashboard](https://zambia-fra-maize-price.streamlit.app)**
+**[➡️ Interactive dashboard](https://zambia-fra-maize-price.streamlit.app)**
 
 Move the sliders for the 2026 exchange rate, harvest, and inflation, and watch
 the predicted price update live.
@@ -43,9 +43,9 @@ figures divided by 1,000).
 
 ## 🔬 Method
 
-A **Ridge regression** (regularised linear regression) on five features —
+A **Ridge regression** (regularised linear regression) on five features -
 previous year's price, exchange rate, inflation, maize harvest, and an
-election-year flag — evaluated with **leave-one-out cross-validation** (≈24
+election-year flag - evaluated with **leave-one-out cross-validation** (≈24
 annual observations). The previous year's price and the exchange rate dominate;
 the FRA effectively anchors on last year's figure and adjusts upward.
 
@@ -65,13 +65,13 @@ jupyter notebook Zambia-FRA-Maize-Price-Prediction.ipynb
 
 - Small annual sample; the high R² partly reflects the price's strong
   year-to-year autocorrelation.
-- The price is a political decision — sudden cuts or jumps can't be modelled.
-- Recent harvest (2017–2025) and macro data are from official sources; some
-  earlier years are best-available estimates.
+- The price is a political decision -sudden cuts or jumps can't be modelled.
+- Recent harvest (2017-2025) and macro data are from official sources; some
+  earlier years are best- available estimates.
 - Treat the forecast as **directional**, not exact.
 
 ## 👤 Author
 
-**Boldwin Mweemba** — Data & Financial Analyst, Lusaka, Zambia
+**Boldwin Mweemba** - Data & Financial Analyst, Lusaka, Zambia
 [LinkedIn](https://www.linkedin.com/in/boldwin-mweemba) ·
 [GitHub](https://github.com/BoldwinMax)
